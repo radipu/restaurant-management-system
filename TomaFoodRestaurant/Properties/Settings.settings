@@ -1,0 +1,126 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TomaFoodRestaurant.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="countOpenTime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="userPrePassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="userPreName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="openLimit" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3000</Value>
+    </Setting>
+    <Setting Name="ExpiryLimit" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="checkOnlineOrder" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="callerID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AD101</Value>
+    </Setting>
+    <Setting Name="pcVersion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MYSQL</Value>
+    </Setting>
+    <Setting Name="cashDrawer" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="connString" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ipaddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="username" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="database" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="password" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="StripeAPI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">NONE</Value>
+    </Setting>
+    <Setting Name="PublishAPI" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="checkReservation" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CardStatus" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Hidden</Value>
+    </Setting>
+    <Setting Name="ItemNameChanged" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ReceiptName</Value>
+    </Setting>
+    <Setting Name="OnlineOrder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Deactive</Value>
+    </Setting>
+    <Setting Name="TposVersion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Responsive</Value>
+    </Setting>
+    <Setting Name="DbType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MYSQL</Value>
+    </Setting>
+    <Setting Name="deviceType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SERVER</Value>
+    </Setting>
+    <Setting Name="serverIp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">127.0.0.1</Value>
+    </Setting>
+    <Setting Name="backend" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://tomafood.net/</Value>
+    </Setting>
+    <Setting Name="requirdCustomTotal" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="isEnableAutoDiscount" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="requirdDiscountPassword" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="showkitichineSection" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="showcouponsection" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="enableWebPrint" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="enableDelcharge" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="accountId" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="applicationFees" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">1.2</Value>
+    </Setting>
+    <Setting Name="feeType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">percent</Value>
+    </Setting>
+    <Setting Name="kitchenEmptyLine" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="stripeEnable" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="appLanguage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ar-SA</Value>
+    </Setting>
+    <Setting Name="autoPrint" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="autoPrintLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

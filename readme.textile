@@ -1,0 +1,7 @@
+TPOS Version 1.5.x
+
+TPOS is a desktop version of tomafood restaurant solution where inside restaurant you can take and manage your orders.
+
+Visit www.ginilab.com and www.tomafood.com for more
+
+Contact us at contact@ginilab.com

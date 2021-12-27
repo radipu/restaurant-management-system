@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="yes"?>
+<CPrintConfig>
+  <PrintPaymentBill>true</PrintPaymentBill>
+  <KitchenPrinterName>\\DEB-PC\Microsoft XPS Document Writer</KitchenPrinterName>
+  <BeveragePrinterName>\\DEB-PC\Microsoft XPS Document Writer</BeveragePrinterName>
+  <ClientPrinterName>\\DEB-PC\Microsoft XPS Document Writer</ClientPrinterName>
+</CPrintConfig>

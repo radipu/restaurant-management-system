@@ -1,0 +1,12 @@
+1. new column add into rcs_users
+  a. is_update
+
+2. new column add into rcs_order
+  a. is_sync
+
+
+
+
+The Little Chip
+username: littlechip
+password: 6707

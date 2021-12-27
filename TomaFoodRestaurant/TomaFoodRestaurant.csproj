@@ -1,0 +1,1644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AFCC00F9-2BA9-480C-B2E0-6C618B8544FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TomaFoodRestaurant</RootNamespace>
+    <AssemblyName>TomaFoodRestaurant</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <PublishUrl>ftp://tomafood.net/public_html/tpos/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://tomafood.net/tpos/</InstallUrl>
+    <UpdateUrl>https://tomafood.net/tpos/</UpdateUrl>
+    <SupportUrl>http://tomafood.net</SupportUrl>
+    <ProductName>TPOS</ProductName>
+    <PublisherName>Ginilab Ltd.</PublisherName>
+    <SuiteName>TPOS</SuiteName>
+    <MinimumRequiredVersion>2.1.5.3</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>2.1.5.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsUrl>F:\DOTNET\tposv1\packages</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>TomaFoodRestaurant.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <Prefer32Bit>true</Prefer32Bit>
+    <Optimize>false</Optimize>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <DocumentationFile>bin\Debug\TomaFoodRestaurant.xml</DocumentationFile>
+    <WarningLevel>2</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>990F4B725EEA53720535F626F3AA96F119DB53C7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TomaFoodRestaurant_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>SetupIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CEHIDLibrary, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\CEHIDLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Docs.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v13.2.Drawing, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Core.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Printing.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraMap.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SqlXml" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IO.Log" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\ConnectionMannager.cs" />
+    <Compile Include="BLL\ConnectToServerBLL.cs" />
+    <Compile Include="BLL\CustomizeMessageSentToEmail.cs" />
+    <Compile Include="BLL\DataSyncBLL.cs" />
+    <Compile Include="BLL\PackageItemBLL.cs" />
+    <Compile Include="BLL\PrintToPrinterBLL.cs" />
+    <Compile Include="DAL\CommonMethodConectionReaderClose.cs" />
+    <Compile Include="DAL\CommonMethod\CommonOrderDetials.cs" />
+    <Compile Include="DAL\CommonMethod\SendEmail.cs" />
+    <Compile Include="DAL\CommonMethod\DataSync.cs" />
+    <Compile Include="DAL\CommonMethod\PriceCalculation.cs" />
+    <Compile Include="DAL\DAO\EmailModuleDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MysqlEmailModuleDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlPostcode.cs" />
+    <Compile Include="DAL\MySqlGatewayConnectionServer.cs" />
+    <Compile Include="deatilsControls1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>deatilsControls.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVars.cs" />
+    <Compile Include="Language\ar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EmailSetting.cs" />
+    <Compile Include="Model\CustomLibrary.cs" />
+    <Compile Include="Model\DriverInformaiton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\KitchenItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\KitchenSection.cs" />
+    <Compile Include="Model\ConnectionModelSave.cs" />
+    <Compile Include="Model\CouponCode.cs" />
+    <Compile Include="Model\CutomeTileItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\HardwareInforamtion.cs" />
+    <Compile Include="Model\MenuType.cs" />
+    <Compile Include="Model\LocalDataSet.cs" />
+    <Compile Include="Model\MultipleItem.cs" />
+    <Compile Include="Model\NewPrint.cs" />
+    <Compile Include="Model\LocalOrderSyn.cs" />
+    <Compile Include="Model\OnlineOrder.cs" />
+    <Compile Include="Model\OptionJson.cs" />
+    <Compile Include="Model\OptionJsonConverter.cs" />
+    <Compile Include="Model\OrderItemMerged.cs" />
+    <Compile Include="Model\OrderPayments.cs" />
+    <Compile Include="Model\PackageItemNew.cs" />
+    <Compile Include="Model\CustomerAddress.cs" />
+    <Compile Include="Model\Postcode.cs" />
+    <Compile Include="Model\PrinterInformation.cs" />
+    <Compile Include="Model\PrintHelper.cs" />
+    <Compile Include="Model\PrintToPrinter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\ReceipeItemChangePrice.cs" />
+    <Compile Include="Model\EmailModule.cs" />
+    <Compile Include="Model\RountTileButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\StripeDetails.cs" />
+    <Compile Include="Model\TileControlAce.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NewLoginForm\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewLoginForm\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\AllSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\AllSettingsForm.designer.cs">
+      <DependentUpon>AllSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\CoverageAreaBLL.cs" />
+    <Compile Include="BLL\CustomerBLL.cs" />
+    <Compile Include="BLL\CustomerRecentItemBLL.cs" />
+    <Compile Include="BLL\DatabaseSyncBLL.cs" />
+    <Compile Include="BLL\DeliveryChargeBLL.cs" />
+    <Compile Include="BLL\DistanceBLL.cs" />
+    <Compile Include="BLL\ErrorReportBLL.cs" />
+    <Compile Include="BLL\ExtraPriceBLL.cs" />
+    <Compile Include="BLL\GlobalUrlBLL.cs" />
+    <Compile Include="BLL\LicenceKeyBLL.cs" />
+    <Compile Include="BLL\OnlineOrderBLL.cs" />
+    <Compile Include="BLL\OrderSyncroniseBLL.cs" />
+    <Compile Include="BLL\OthersMethod.cs" />
+    <Compile Include="BLL\PackageBLL.cs" />
+    <Compile Include="BLL\PostCodeBLL.cs" />
+    <Compile Include="BLL\PrintCopySetupBLL.cs" />
+    <Compile Include="BLL\PrinterSetupBLL.cs" />
+    <Compile Include="BLL\PrintStyleBLL.cs" />
+    <Compile Include="BLL\ReservationBLL.cs" />
+    <Compile Include="BLL\RestaurantInformationBLL.cs" />
+    <Compile Include="BLL\RestaurantMenuBLL.cs" />
+    <Compile Include="BLL\RestaurantOrderBLL.cs" />
+    <Compile Include="BLL\RestaurantTableBLL.cs" />
+    <Compile Include="BLL\SoftwareActivationBLL.cs" />
+    <Compile Include="BLL\UserLoginBLL.cs" />
+    <Compile Include="DAL\CombineReader\CoverageAreaReader.cs" />
+    <Compile Include="DAL\CombineReader\CustomerReader.cs" />
+    <Compile Include="DAL\CombineReader\LicenceKeyReader.cs" />
+    <Compile Include="DAL\CombineReader\PackageReader.cs" />
+    <Compile Include="DAL\CombineReader\RecentCustomerReader.cs" />
+    <Compile Include="DAL\CombineReader\RestaurantInformationReader.cs" />
+    <Compile Include="DAL\CombineReader\RestaurantOrderReader.cs" />
+    <Compile Include="DAL\CombineReader\RestaurantTableReader.cs" />
+    <Compile Include="DAL\DAO\CoverageAreaDAO.cs" />
+    <Compile Include="DAL\DAO\CustomerDAO.cs" />
+    <Compile Include="DAL\DAO\CustomerRecentItemDAO.cs" />
+    <Compile Include="DAL\DAO\DatabaseSyncDAO.cs" />
+    <Compile Include="DAL\DAO\DeliveryChargeDAO.cs" />
+    <Compile Include="DAL\DAO\DistanceDAO.cs" />
+    <Compile Include="DAL\DAO\ExtraPriceDAO.cs" />
+    <Compile Include="DAL\DAO\GlobalUrlDAO.cs" />
+    <Compile Include="DAL\DAO\LicenceKeyDAO.cs" />
+    <Compile Include="DAL\DAO\PackageDAO.cs" />
+    <Compile Include="DAL\DAO\PostCodeDAO.cs" />
+    <Compile Include="DAL\DAO\PrintCopySetupDAO.cs" />
+    <Compile Include="DAL\DAO\PrinterSetupDAO.cs" />
+    <Compile Include="DAL\DAO\PrintStyleDAO.cs" />
+    <Compile Include="DAL\DAO\ReservationDAO.cs" />
+    <Compile Include="DAL\DAO\RestaurantInformationDAO.cs" />
+    <Compile Include="DAL\DAO\RestaurantMenuDAO.cs" />
+    <Compile Include="DAL\DAO\RestaurantOrderDAO.cs" />
+    <Compile Include="DAL\DAO\RestaurantTableDAO.cs" />
+    <Compile Include="DAL\DAO\UserLoginDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlCoverageAreaDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlCustomerDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlCustomerRecentItemDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlDatabaseSyncDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlDeliveryChargeDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlDistanceDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlExtraPriceDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlGlobalUrlDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlLicenceKeyDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlPackageDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlPostCodeDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlPrintCopySetupDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlPrinterSetupDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlPrintStyleDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlReservationDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlRestaurantInformationDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlRestaurantMenuDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlRestaurantOrderDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlRestaurantTableDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\MySqlUserLoginDAO.cs" />
+    <Compile Include="DAL\DAO_Mysql\RestaurantTableDAOPre.cs" />
+    <Compile Include="DAL\GatewayConnection.cs" />
+    <Compile Include="DAL\GlobalDateTimeFormat.cs" />
+    <Compile Include="DAL\MySqlGatewayConnection.cs" />
+    <Compile Include="DAL\QueryManager.cs" />
+    <Compile Include="deatilsControls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="deatilsControls.Designer.cs" />
+    <Compile Include="BLL\EditForm\EditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BLL\EditForm\EditForm.Designer.cs">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSoftActivationMsg.cs" />
+    <Compile Include="ICommonMethodInterface.cs" />
+    <Compile Include="KeyboardButton\InputTextButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="KeyboardButton\KeyButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="KeyboardButton\RMSGenericButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MainFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormView.designer.cs">
+      <DependentUpon>MainFormView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CartItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\Customer.cs" />
+    <Compile Include="Model\CustomerRecentItemMD.cs" />
+    <Compile Include="Model\CustomerShowButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\MemberShips.cs" />
+    <Compile Include="Model\MemberShipType.cs" />
+    <Compile Include="Model\Distance.cs" />
+    <Compile Include="Model\DelvaryCharge.cs" />
+    <Compile Include="Model\AreaCoverage.cs" />
+    <Compile Include="Model\AttributeButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\Cryptograph.cs" />
+    <Compile Include="Model\CustomerOrderItems.cs" />
+    <Compile Include="Model\CustomFlowLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\CustomiseTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\DistanceLookUpJson.cs" />
+    <Compile Include="Model\ExtraPriceModel.cs" />
+    <Compile Include="Model\FormManage.cs" />
+    <Compile Include="Model\GeneralInformation.cs" />
+    <Compile Include="Model\GenericCopier.cs" />
+    <Compile Include="Model\GlobalSetting.cs" />
+    <Compile Include="Model\GlobalUrl.cs" />
+    <Compile Include="Model\LicenceKey.cs" />
+    <Compile Include="Model\MultipleItemMD.cs" />
+    <Compile Include="Model\MultipleMenuDetailsJson.cs" />
+    <Compile Include="Model\OptionItemSelect.cs" />
+    <Compile Include="Model\OrderDetails.cs" />
+    <Compile Include="Model\OrderItem.cs" />
+    <Compile Include="Model\OrderItemAttributes.cs" />
+    <Compile Include="Model\OrderItemDetailsMD.cs" />
+    <Compile Include="Model\OrderPackage.cs" />
+    <Compile Include="Model\PackageCategoryButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\PackageItem.cs" />
+    <Compile Include="Model\PackageItemButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\PackageItemButtonNew.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\PackageItemExtraPrice.cs" />
+    <Compile Include="Model\PostCodeModel.cs" />
+    <Compile Include="Model\PrintContent.cs" />
+    <Compile Include="Model\PrintCopySetup.cs" />
+    <Compile Include="Model\PrinterConfig.cs" />
+    <Compile Include="Model\PrinterSetup.cs" />
+    <Compile Include="Model\PrintFormat.cs" />
+    <Compile Include="Model\PrintMethods.cs" />
+    <Compile Include="Model\PrintStyle.cs" />
+    <Compile Include="Model\PrintUtility.cs" />
+    <Compile Include="Model\RawPrinterHelper.cs" />
+    <Compile Include="Model\RealTimeData.cs" />
+    <Compile Include="Model\ReceipeCategoryButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\ReceipeMenuItemButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\ReceipeMixType.cs" />
+    <Compile Include="Model\ReceipeSubCategoryButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\ReceipeTypeButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\RecipeMultipleMD.cs" />
+    <Compile Include="Model\RecipeOptionButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\RecipeOptionItemButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\RecipeOptionItemButton1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\RecipeOptionMD.cs" />
+    <Compile Include="Model\RecipePackageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\RecipePackageMD.cs" />
+    <Compile Include="Model\RectangleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\Recursion.cs" />
+    <Compile Include="Model\Reservation.cs" />
+    <Compile Include="Model\RestaurantInformation.cs" />
+    <Compile Include="Model\RestaurantOrder.cs" />
+    <Compile Include="Model\RestaurantSync.cs" />
+    <Compile Include="Model\RestaurantTable.cs" />
+    <Compile Include="Model\RestaurantUsers.cs" />
+    <Compile Include="Model\RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\SaleOrder.cs" />
+    <Compile Include="Model\ShopingCardModel.cs" />
+    <Compile Include="Model\SignalRHubConnection.cs" />
+    <Compile Include="Model\SqureButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\StringTokenizer.cs" />
+    <Compile Include="Model\TabPagesStack.cs" />
+    <Compile Include="Model\TempOptionDictionary.cs" />
+    <Compile Include="Model\TextDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OtherForm\AddReservationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\AddReservationForm.Designer.cs">
+      <DependentUpon>AddReservationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\AllOptionViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\AllOptionViewForm.Designer.cs">
+      <DependentUpon>AllOptionViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\AttributeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\AttributeForm.Designer.cs">
+      <DependentUpon>AttributeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\CallerDetailsShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\CallerDetailsShow.Designer.cs">
+      <DependentUpon>CallerDetailsShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\CallList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherForm\CallList.Designer.cs">
+      <DependentUpon>CallList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\CardDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\CardDetails.Designer.cs">
+      <DependentUpon>CardDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\CheckingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\CheckingForm.Designer.cs">
+      <DependentUpon>CheckingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\CheckSoftwareActivation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\CheckSoftwareActivation.Designer.cs">
+      <DependentUpon>CheckSoftwareActivation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\CheckSoftwareActivationOfOfflineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\CheckSoftwareActivationOfOfflineForm.Designer.cs">
+      <DependentUpon>CheckSoftwareActivationOfOfflineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\CouponCodeGenerate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherForm\CouponCodeGenerate.Designer.cs">
+      <DependentUpon>CouponCodeGenerate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\DatabaseProcessbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\DatabaseProcessbar.Designer.cs">
+      <DependentUpon>DatabaseProcessbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\DBsetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\DBsetup.Designer.cs">
+      <DependentUpon>DBsetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\DeliveryMaplocationview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\DeliveryMaplocationview.Designer.cs">
+      <DependentUpon>DeliveryMaplocationview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\DeliveryReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherForm\DeliveryReport.Designer.cs">
+      <DependentUpon>DeliveryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\CollectionReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherForm\CollectionReport.Designer.cs">
+      <DependentUpon>CollectionReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\ConfirmOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\ConfirmOrderForm.Designer.cs">
+      <DependentUpon>ConfirmOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\CoversForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\CoversForm.Designer.cs">
+      <DependentUpon>CoversForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\CustomerEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\CustomerEntryForm.Designer.cs">
+      <DependentUpon>CustomerEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\CustomerRecentItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\CustomerRecentItemsForm.Designer.cs">
+      <DependentUpon>CustomerRecentItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\DeliveryChargeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\DeliveryChargeForm.Designer.cs">
+      <DependentUpon>DeliveryChargeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\DeliveryTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\DeliveryTime.Designer.cs">
+      <DependentUpon>DeliveryTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\DeliveryTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\DeliveryTimeForm.Designer.cs">
+      <DependentUpon>DeliveryTimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\DiscountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\DiscountForm.Designer.cs">
+      <DependentUpon>DiscountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\Download.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\Download.Designer.cs">
+      <DependentUpon>Download.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\DriverOrderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\DriverOrderList.Designer.cs">
+      <DependentUpon>DriverOrderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\frmCidv2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\frmCidv2.Designer.cs">
+      <DependentUpon>frmCidv2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\HouseByPostcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\HouseByPostcode.Designer.cs">
+      <DependentUpon>HouseByPostcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\KitchenControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherForm\KitchenControl.Designer.cs">
+      <DependentUpon>KitchenControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\NewProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\NewProgressBar.Designer.cs">
+      <DependentUpon>NewProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\OnlineOrderDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\OnlineOrderDetailsForm.Designer.cs">
+      <DependentUpon>OnlineOrderDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\OptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\OptionForm.Designer.cs">
+      <DependentUpon>OptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\PackageItemFormLoadNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherForm\PackageItemFormLoadNew.designer.cs">
+      <DependentUpon>PackageItemFormLoadNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\PriceChangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\PriceChangeForm.Designer.cs">
+      <DependentUpon>PriceChangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\processBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\processBar.Designer.cs" />
+    <Compile Include="OtherForm\QuickMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\QuickMenu.Designer.cs">
+      <DependentUpon>QuickMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\RecipeTypeDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherForm\RecipeTypeDetails.Designer.cs" />
+    <Compile Include="OtherForm\Refund.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\Refund.Designer.cs">
+      <DependentUpon>Refund.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\ResControlSetup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherForm\ResControlSetup.Designer.cs">
+      <DependentUpon>ResControlSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\RestaurantOrderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\RestaurantOrderList.Designer.cs">
+      <DependentUpon>RestaurantOrderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\RestaurantOrdersReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherForm\RestaurantOrdersReport.Designer.cs">
+      <DependentUpon>RestaurantOrdersReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\setupStripe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\setupStripe.Designer.cs">
+      <DependentUpon>setupStripe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\SoftActiveMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\SoftActiveMsg.Designer.cs">
+      <DependentUpon>SoftActiveMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\GlobalUrlSetupForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherForm\GlobalUrlSetupForm.Designer.cs">
+      <DependentUpon>GlobalUrlSetupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\ItemOptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\ItemOptionForm.Designer.cs">
+      <DependentUpon>ItemOptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\LoadMultipleMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\LoadMultipleMenuForm.Designer.cs">
+      <DependentUpon>LoadMultipleMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\MergeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\MergeForm.Designer.cs">
+      <DependentUpon>MergeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\MultiplePartControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherForm\MultiplePartControl.Designer.cs">
+      <DependentUpon>MultiplePartControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\NumberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\NumberForm.Designer.cs">
+      <DependentUpon>NumberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\NumberFormUS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherForm\NumberFormUS.Designer.cs">
+      <DependentUpon>NumberFormUS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\NumberPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\NumberPad.Designer.cs">
+      <DependentUpon>NumberPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\NumberPadUs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherForm\NumberPadUs.Designer.cs">
+      <DependentUpon>NumberPadUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\OnlineOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\OnlineOrderForm.Designer.cs">
+      <DependentUpon>OnlineOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\PackageDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherForm\PackageDetails.Designer.cs">
+      <DependentUpon>PackageDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\PackageItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\PackageItemForm.Designer.cs">
+      <DependentUpon>PackageItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\PackItemsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherForm\PackItemsControl.Designer.cs">
+      <DependentUpon>PackItemsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\PathChangingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\PathChangingForm.Designer.cs">
+      <DependentUpon>PathChangingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\PrintCopySetupForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherForm\PrintCopySetupForm.Designer.cs">
+      <DependentUpon>PrintCopySetupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\PrinterSettingsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherForm\PrinterSettingsForm.designer.cs">
+      <DependentUpon>PrinterSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\PrinterUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\PrinterUpdateForm.Designer.cs">
+      <DependentUpon>PrinterUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\processBar1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\processBar1.Designer.cs">
+      <DependentUpon>processBar1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\RejectCauseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\RejectCauseForm.Designer.cs">
+      <DependentUpon>RejectCauseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\ReservationMessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\ReservationMessageForm.Designer.cs">
+      <DependentUpon>ReservationMessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\ReservationTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherForm\ReservationTable.designer.cs">
+      <DependentUpon>ReservationTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\ResetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\ResetForm.Designer.cs">
+      <DependentUpon>ResetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\ServiceChargeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\ServiceChargeForm.Designer.cs">
+      <DependentUpon>ServiceChargeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\ShowOrderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\ShowOrderDetails.Designer.cs">
+      <DependentUpon>ShowOrderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\StartScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\StartScreen.Designer.cs">
+      <DependentUpon>StartScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\SwapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\SwapForm.Designer.cs">
+      <DependentUpon>SwapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\TableLoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\TableLoadForm.Designer.cs">
+      <DependentUpon>TableLoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\TableLoadResponsive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\TableLoadResponsive.Designer.cs">
+      <DependentUpon>TableLoadResponsive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\TomafoodSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\TomafoodSite.Designer.cs">
+      <DependentUpon>TomafoodSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\UpdateReservationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\UpdateReservationForm.Designer.cs">
+      <DependentUpon>UpdateReservationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\WaitForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\WaitForm2.Designer.cs">
+      <DependentUpon>WaitForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForm\frmWebview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForm\frmWebview.Designer.cs">
+      <DependentUpon>frmWebview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageAllComponent.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DynamicReportMethod.cs" />
+    <Compile Include="Report\HtmlReport.cs" />
+    <Compile Include="Report\PrintDocumentDirect.cs" />
+    <Compile Include="Report\PrintingHTML.cs" />
+    <Compile Include="Report\PrintReport.cs" />
+    <Compile Include="Report\ReportData.cs" />
+    <Compile Include="Report\ReportPrintViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportPrintViewer.Designer.cs">
+      <DependentUpon>ReportPrintViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportViewMethod\ReportViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportViewMethod\ReportViewerForm.Designer.cs">
+      <DependentUpon>ReportViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\TPOSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TPOSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sequrity\AdminPermissionSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sequrity\AdminPermissionSection.Designer.cs">
+      <DependentUpon>AdminPermissionSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sequrity\AutorizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sequrity\AutorizeForm.Designer.cs">
+      <DependentUpon>AutorizeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sequrity\DatabaseBackupSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sequrity\DatabaseBackupSystem.Designer.cs">
+      <DependentUpon>DatabaseBackupSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sequrity\OthersControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sequrity\OthersControl.Designer.cs">
+      <DependentUpon>OthersControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sequrity\QueryExecuteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sequrity\QueryExecuteForm.Designer.cs">
+      <DependentUpon>QueryExecuteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sequrity\UrlChageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sequrity\UrlChageForm.Designer.cs">
+      <DependentUpon>UrlChageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.ar.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Language\ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewLoginForm\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\AllSettingsForm.resx">
+      <DependentUpon>AllSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deatilsControls.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>deatilsControls1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\EditForm\EditForm.resx">
+      <DependentUpon>EditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormView.resx">
+      <DependentUpon>MainFormView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\AddReservationForm.resx">
+      <DependentUpon>AddReservationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\AllOptionViewForm.resx">
+      <DependentUpon>AllOptionViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\AttributeForm.resx">
+      <DependentUpon>AttributeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\CallerDetailsShow.resx">
+      <DependentUpon>CallerDetailsShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\CallList.resx">
+      <DependentUpon>CallList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\CardDetails.resx">
+      <DependentUpon>CardDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\CheckingForm.resx">
+      <DependentUpon>CheckingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\CheckSoftwareActivation.resx">
+      <DependentUpon>CheckSoftwareActivation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\CheckSoftwareActivationOfOfflineForm.resx">
+      <DependentUpon>CheckSoftwareActivationOfOfflineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\CouponCodeGenerate.resx">
+      <DependentUpon>CouponCodeGenerate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\DatabaseProcessbar.resx">
+      <DependentUpon>DatabaseProcessbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\DBsetup.resx">
+      <DependentUpon>DBsetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\DeliveryMaplocationview.resx">
+      <DependentUpon>DeliveryMaplocationview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\DeliveryReport.resx">
+      <DependentUpon>DeliveryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\CollectionReport.resx">
+      <DependentUpon>CollectionReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\ConfirmOrderForm.resx">
+      <DependentUpon>ConfirmOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\CoversForm.resx">
+      <DependentUpon>CoversForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\CustomerEntryForm.resx">
+      <DependentUpon>CustomerEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\CustomerRecentItemsForm.resx">
+      <DependentUpon>CustomerRecentItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\DeliveryChargeForm.resx">
+      <DependentUpon>DeliveryChargeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\DeliveryTime.resx">
+      <DependentUpon>DeliveryTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\DeliveryTimeForm.resx">
+      <DependentUpon>DeliveryTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\DiscountForm.resx">
+      <DependentUpon>DiscountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\Download.resx">
+      <DependentUpon>Download.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\DriverOrderList.resx">
+      <DependentUpon>DriverOrderList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\frmCidv2.resx">
+      <DependentUpon>frmCidv2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\HouseByPostcode.resx">
+      <DependentUpon>HouseByPostcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\KitchenControl.resx">
+      <DependentUpon>KitchenControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\NewProgressBar.resx">
+      <DependentUpon>NewProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\OnlineOrderDetailsForm.resx">
+      <DependentUpon>OnlineOrderDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\OptionForm.resx">
+      <DependentUpon>OptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\PackageItemFormLoadNew.resx">
+      <DependentUpon>PackageItemFormLoadNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\PriceChangeForm.resx">
+      <DependentUpon>PriceChangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\processBar.resx" />
+    <EmbeddedResource Include="OtherForm\QuickMenu.resx">
+      <DependentUpon>QuickMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\RecipeTypeDetails.resx" />
+    <EmbeddedResource Include="OtherForm\Refund.resx">
+      <DependentUpon>Refund.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\ResControlSetup.resx">
+      <DependentUpon>ResControlSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\ResetForm.resx">
+      <DependentUpon>ResetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\RestaurantOrderList.resx">
+      <DependentUpon>RestaurantOrderList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\RestaurantOrdersReport.resx">
+      <DependentUpon>RestaurantOrdersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\setupStripe.resx">
+      <DependentUpon>setupStripe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\SoftActiveMsg.resx">
+      <DependentUpon>SoftActiveMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\GlobalUrlSetupForm.resx">
+      <DependentUpon>GlobalUrlSetupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\ItemOptionForm.resx">
+      <DependentUpon>ItemOptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\LoadMultipleMenuForm.resx">
+      <DependentUpon>LoadMultipleMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\MergeForm.resx">
+      <DependentUpon>MergeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\MultiplePartControl.resx">
+      <DependentUpon>MultiplePartControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\NumberForm.resx">
+      <DependentUpon>NumberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\NumberFormUS.resx">
+      <DependentUpon>NumberFormUS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\NumberPad.resx">
+      <DependentUpon>NumberPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\NumberPadUs.resx">
+      <DependentUpon>NumberPadUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\OnlineOrderForm.resx">
+      <DependentUpon>OnlineOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\PackageDetails.resx">
+      <DependentUpon>PackageDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\PackageItemForm.resx">
+      <DependentUpon>PackageItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\PackItemsControl.resx">
+      <DependentUpon>PackItemsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\PathChangingForm.resx">
+      <DependentUpon>PathChangingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\PrintCopySetupForm.resx">
+      <DependentUpon>PrintCopySetupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\PrinterSettingsForm.resx">
+      <DependentUpon>PrinterSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\PrinterUpdateForm.resx">
+      <DependentUpon>PrinterUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\processBar1.resx">
+      <DependentUpon>processBar1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\RejectCauseForm.resx">
+      <DependentUpon>RejectCauseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\ReservationMessageForm.resx">
+      <DependentUpon>ReservationMessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\ReservationTable.resx">
+      <DependentUpon>ReservationTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\ServiceChargeForm.resx">
+      <DependentUpon>ServiceChargeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\ShowOrderDetails.resx">
+      <DependentUpon>ShowOrderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\StartScreen.resx">
+      <DependentUpon>StartScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\SwapForm.resx">
+      <DependentUpon>SwapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\TableLoadForm.resx">
+      <DependentUpon>TableLoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\TableLoadResponsive.resx">
+      <DependentUpon>TableLoadResponsive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\TomafoodSite.resx">
+      <DependentUpon>TomafoodSite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\UpdateReservationForm.resx">
+      <DependentUpon>UpdateReservationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\WaitForm2.resx">
+      <DependentUpon>WaitForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForm\frmWebview.resx">
+      <DependentUpon>frmWebview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\KichinePrint\KichinePrint1.rdlc" />
+    <EmbeddedResource Include="Report\KichinePrint\KichinePrint2.rdlc" />
+    <EmbeddedResource Include="Report\KichinePrint\KichinePrint3.rdlc" />
+    <EmbeddedResource Include="Report\KichinePrint\KichinePrint4.rdlc" />
+    <EmbeddedResource Include="Report\ReceiptPrint - Copy.rdlc" />
+    <EmbeddedResource Include="Report\ReceiptPrint1.rdlc" />
+    <EmbeddedResource Include="Report\ReceiptPrint2.rdlc" />
+    <EmbeddedResource Include="Report\ReceiptPrint3.rdlc" />
+    <EmbeddedResource Include="Report\ReceiptPrint4.rdlc" />
+    <EmbeddedResource Include="Report\ReportPrintViewer.resx">
+      <DependentUpon>ReportPrintViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportViewMethod\ReportViewerForm.resx">
+      <DependentUpon>ReportViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\DatabaseBackupSystem.resx" />
+    <None Include="Resources\AdminPermissionSection.resx" />
+    <None Include="Resources\AutorizeForm.resx" />
+    <EmbeddedResource Include="Sequrity\AdminPermissionSection.resx">
+      <DependentUpon>AdminPermissionSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequrity\AutorizeForm.resx">
+      <DependentUpon>AutorizeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequrity\DatabaseBackupSystem.resx">
+      <DependentUpon>DatabaseBackupSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequrity\OthersControl.resx">
+      <DependentUpon>OthersControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequrity\QueryExecuteForm.resx">
+      <DependentUpon>QueryExecuteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequrity\UrlChageForm.resx">
+      <DependentUpon>UrlChageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Report\TPOSDataSet.xsc">
+      <DependentUpon>TPOSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Report\TPOSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TPOSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\TPOSDataSet.xss">
+      <DependentUpon>TPOSDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\AD101Device.dll" />
+    <Content Include="Image\Config\Print_Config.xml" />
+    <None Include="Resources\print_24px.png" />
+    <None Include="Resources\settings_24px.png" />
+    <None Include="Resources\Deliver_Food_24px.png" />
+    <None Include="Resources\restaurant_table_24px.png" />
+    <None Include="Resources\home_24px.png" />
+    <None Include="Resources\Collapse Arrow_20px.png" />
+    <None Include="Resources\Expand Arrow_20px.png" />
+    <None Include="Resources\restaurant_24px.png" />
+    <None Include="Resources\waiter_24px.png" />
+    <None Include="Resources\price_tag_pound_24px.png" />
+    <None Include="Resources\order_history_24px.png" />
+    <None Include="Resources\supplier_24px.png" />
+    <Content Include="SetupIcon.ico" />
+    <None Include="Resources\frame1.png" />
+    <None Include="Resources\skype.png" />
+    <None Include="Resources\skype-social-outlined-logo.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\user%281%29.png" />
+    <Content Include="Image\icons8-shutdown-24.png" />
+    <Content Include="Resources\10.jpg" />
+    <Content Include="Resources\2.png" />
+    <Content Include="Resources\20.jpg" />
+    <Content Include="Resources\5.jpg" />
+    <Content Include="Resources\a1.png" />
+    <Content Include="Resources\accept.jpg" />
+    <Content Include="Resources\accept.png" />
+    <Content Include="Resources\accept1.png" />
+    <Content Include="Resources\ajax-loader.gif" />
+    <None Include="Resources\C.png" />
+    <Content Include="Resources\deselect.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\half.png" />
+    <None Include="Resources\half-grey.png" />
+    <None Include="Resources\icon_option.png" />
+    <None Include="Resources\icons.png" />
+    <None Include="Resources\icons8-phone-16.png" />
+    <None Include="Resources\icons8-shutdown-24.png" />
+    <None Include="Resources\Image 1.png" />
+    <None Include="Resources\inp-btn-img-down-1.jpg" />
+    <None Include="Resources\inp-button-img-down-2.jpg" />
+    <None Include="Resources\inp-button-img-up-1.jpg" />
+    <None Include="Resources\logo_ginilab.png" />
+    <None Include="Resources\people.png" />
+    <None Include="Resources\phone.png" />
+    <None Include="Resources\phone-call.png" />
+    <None Include="Resources\phone-contact.png" />
+    <None Include="Resources\quarter.png" />
+    <None Include="Resources\Quarter-grey.png" />
+    <None Include="Resources\reject.jpg" />
+    <None Include="Resources\reject.png" />
+    <None Include="Resources\reject1.png" />
+    <None Include="Resources\r.png" />
+    <None Include="Resources\reorder.png" />
+    <None Include="Resources\NR.PNG" />
+    <None Include="Resources\onlineOrder.gif" />
+    <Content Include="Resources\rsz_1user-alt-128.png" />
+    <Content Include="Resources\rsz_pie-chart-icon-50715.png" />
+    <Content Include="Resources\rsz_user-alt-128.png" />
+    <Content Include="Resources\select.png" />
+    <Content Include="Resources\user-alt-128.png" />
+    <None Include="Resources\view2.png" />
+    <None Include="Image\record.png" />
+    <None Include="Image\rsz_record.png" />
+    <None Include="Image\rsz_nonrecord.png" />
+    <None Include="Image\Find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="BouncyCastle.Crypto">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CEHIDLibrary">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CEHIDLibrary.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="CSharp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Mailjet.Client">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.PointOfService">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MySql.Data">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="netstandard">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Newtonsoft.Json">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="NReco.PdfGenerator">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="TomaFoodRestaurant.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="BouncyCastle">
+      <Version>1.8.9</Version>
+    </PackageReference>
+    <PackageReference Include="EntityFramework">
+      <Version>6.4.4</Version>
+    </PackageReference>
+    <PackageReference Include="FirebaseDatabase.net">
+      <Version>4.0.4</Version>
+    </PackageReference>
+    <PackageReference Include="GMap.NET.WinForms">
+      <Version>2.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="json-serialize">
+      <Version>1.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="Mailjet.Api">
+      <Version>2.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CSharp">
+      <Version>4.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.ReportViewer.WinForms">
+      <Version>10.0.40219.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Toolkit.Forms.UI.Controls.WebView">
+      <Version>6.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Web.WebView2">
+      <Version>1.0.864.35</Version>
+    </PackageReference>
+    <PackageReference Include="MySql.Data">
+      <Version>8.0.25</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="NReco.PdfGenerator">
+      <Version>1.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="POSForDotNet.SDK">
+      <Version>1.14.1</Version>
+    </PackageReference>
+    <PackageReference Include="RawPrint">
+      <Version>0.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="SendGrid">
+      <Version>9.24.1</Version>
+    </PackageReference>
+    <PackageReference Include="Stripe.net">
+      <Version>17.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe">
+      <Version>5.0.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
